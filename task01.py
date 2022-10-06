@@ -8,11 +8,10 @@ from random import sample
 def numList(count):
     list = sample(range(1, count * 2), count)
     print(list)
-    i = 0
     numSum = 0
-    while i <= count:
-        numSum += list[i]
-        i += 2
+    for i in range(0, count, 2):
+        numSum +=list[i]
+        i+=1
     print(numSum)
 
 
